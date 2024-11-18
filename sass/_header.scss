@@ -1,0 +1,136 @@
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #000000c1;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        &__logo{
+            width: 100px;
+            height: 100px;
+        }
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        &__item{
+            margin-right: 15px;
+            position: relative;
+            transition: all .3s ease-in-out;
+            i{
+                margin-left: 5px;
+                transition: all .3s ease-in-out;
+            }
+
+            &::after{
+                content: '';
+                width: 0%;
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+            }
+            &:hover::after{
+                width: 100%;
+                opacity: 1;
+            }
+            &:hover i{
+                transform: rotate(180deg);
+                transition: all .3s ease-in-out;
+            }
+
+        }
+        &__link{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        &__sublist{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            background-color: #000000c1;
+            padding: 10px;
+        }
+        &__subitem{
+            margin-bottom: 5px;
+        }
+        &__sublink{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        .navbar__item:hover .navbar__sublist{
+            display: block;
+        }
+        .navbar__item:hover .navbar__link{
+            color: #FFC700;
+        }
+        .navbar__subitem:hover .navbar__sublink{
+            color: #FFC700;
+        }
+        &__actions{
+            display: none;
+            align-items: center;
+            gap: 10px;
+        }
+        &__menu{
+            font-size: 30px;
+            color: #fff;
+
+        }
+
+        
+
+    }
+
+}
+
+@media (max-width: 920px) {
+    .header{
+        .navbar{
+            &__list{
+                display: none;
+            }
+            &__actions{
+                display: block;
+            }
+
+        }
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .header{
+        .navbar{
+            &__logo{
+                width: 50px;
+                height: 50px;
+            }
+            &__menu{
+                font-size: 20px;
+            }
+
+
+        }
+    }
+    
+}

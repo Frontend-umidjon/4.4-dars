@@ -3,9 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array methods</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="./index.html" class="navbar__logo">
+                    <img src="./assets/logo.png" alt="logo">
+                </a>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="./index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link">Array methods <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="navbar__sublist">
+                            <li class="navbar__subitem">
+                                <a href="./methods/forEach.html" class="navbar__sublink">Introduction</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./methods/map.html" class="navbar__sublink">Iterative</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./methods/filter.html" class="navbar__sublink">Manipulative</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./methods/reduce.html" class="navbar__sublink">Searching</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./methods/sort.html" class="navbar__sublink">Transforming</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./about.html" class="navbar__link">Best practices</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./contact.html" class="navbar__link">Pitfalls</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./contact.html" class="navbar__link">Examples</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./contact.html" class="navbar__link">Conclusion</a>
+                    </li>
+                </ul>   
+                <div class="navbar__actions">
+                    <button class="navbar__menu" type="button" >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__bg">
+                <div class="container">
+                   <div class="hero__content">
+                    <h1 class="hero__title">Mastering Array Methods: A Fun and Interactive Journey</h1>
+                    <p class="hero__subtitle">
+                        Dive into the world of array methods with this comprehensive guide, where we'll explore the power of JavaScript's most versatile data structures. Get ready for a fun and engaging adventure filled with practical examples and helpful tips!
+                    </p>
+                   </div>
+                    <div class="hero__actions">
+                        <a href="" class="hero__btn">Dive In</a>
+                        <a href="" class="hero__btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="introduction">
+            <div class="container">
+                <h1>Introduction to Array Methods</h1>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-number">1</div>
+                        <h2>What Are Array Methods?</h2>
+                        <p>Array methods are a collection of built-in functions in JavaScript that allow you to manipulate and work with arrays in powerful ways. From adding and removing elements to transforming and sorting data, these methods are essential tools in every developer's toolkit.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-number">2</div>
+                        <h2>Why Learn Array Methods?</h2>
+                        <p>Mastering array methods will not only make your code more efficient and readable but also unlock a world of possibilities when it comes to data processing, analysis, and transformation. These methods are the foundation for working with collections of data in JavaScript.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-number">3</div>
+                        <h2>Getting Started</h2>
+                        <p>In this guide, we'll cover the most commonly used array methods, provide hands-on examples, and share best practices to help you become a pro at manipulating arrays. Whether you're a beginner or an experienced developer, there's something here for everyone!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Iterative">
+            <div class="container">
+                <h1>Iterative Methods: <code>forEach()</code>, <code>map()</code>, <code>filter()</code>, <code>reduce()</code></h1>
+                <div class="grid">
+                    <div class="method-box">
+                        <h2>forEach()</h2>
+                        <p>The <code>forEach()</code> method allows you to iterate over each element in an array and perform a specific action on each one, such as logging the element to the console or updating a property.</p>
+                    </div>
+                    <div class="method-box">
+                        <h2>map()</h2>
+                        <p>The <code>map()</code> method is a powerful tool for transforming an array. It creates a new array with the results of calling a provided function on every element in the calling array.</p>
+                    </div>
+                    <div class="method-box">
+                        <h2>filter()</h2>
+                        <p>The <code>filter()</code> method creates a new array with all elements that pass the test implemented by the provided function. This is great for filtering out elements that don't meet certain criteria.</p>
+                    </div>
+                    <div class="method-box">
+                        <h2>reduce()</h2>
+                        <p>The <code>reduce()</code> method executes a reducer function on each element of the array, resulting in a single output value. It's perfect for tasks like summing all values in an array.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Manipulative">
+            <div class="container">
+                <h1>Accessing and Manipulating Elements</h1>
+                <div class="timeline">
+                    <div class="element-box">
+                        <span class="step-number">1</span>
+                        <h2>push() and pop()</h2>
+                        <p>The <code>push()</code> method adds one or more elements to the end of an array, while the <code>pop()</code> method removes and returns the last element of an array.</p>
+                    </div>
+                    <div class="element-box">
+                        <span class="step-number">2</span>
+                        <h2>slice() and splice()</h2>
+                        <p>The <code>slice()</code> method returns a shallow copy of a portion of an array into a new array object, while the <code>splice()</code> method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.</p>
+                    </div>
+                    <div class="element-box">
+                        <span class="step-number">3</span>
+                        <h2>shift() and unshift()</h2>
+                        <p>The <code>shift()</code> method removes the first element from an array and returns it, while the <code>unshift()</code> method adds one or more elements to the beginning of an array.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="searching">
+            <div class="container">
+                <div class="image-section">
+                  <img src="./assets/searching.png" alt="Illustration of Searching and Sorting" class="illustration">
+                </div>
+                <div class="text-section">
+                  <h1>Searching and Sorting</h1>
+                  <div class="card">
+                    <h2>indexOf() and lastIndexOf()</h2>
+                    <p>The <code>indexOf()</code> method returns the index of the first occurrence of a specified element in an array, while the <code>lastIndexOf()</code> method returns the index of the last occurrence of a specified element in an array.</p>
+                  </div>
+                  <div class="card">
+                    <h2>includes()</h2>
+                    <p>The <code>includes()</code> method returns <code>true</code> if the array contains a specified element, and <code>false</code> otherwise. This is a great way to quickly check if an array contains a specific value.</p>
+                  </div>
+                  <div class="card">
+                    <h2>sort()</h2>
+                    <p>The <code>sort()</code> method sorts the elements of an array in place and returns the array. By default, the sort order is ascending, but you can provide a custom comparison function to sort the array in a different order.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="transformation">
+            <div class="container">
+                <div class="text-section">
+                  <h1 class="title">Transformation Methods</h1>
+                  <div class="card">
+                    <div class="icon">&#8594;</div>
+                    <div class="content">
+                      <h2 class="method-title">concat()</h2>
+                      <p>The <code>concat()</code> method is used to merge two or more arrays. It does not change the existing arrays, but instead returns a new array.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="icon">&#129379;</div>
+                    <div class="content">
+                      <h2 class="method-title">join()</h2>
+                      <p>The <code>join()</code> method joins all elements of an array into a string. You can specify a separator string to be placed between each element in the string.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="icon">&#x21BB;</div>
+                    <div class="content">
+                      <h2 class="method-title">reverse()</h2>
+                      <p>The <code>reverse()</code> method reverses the order of the elements in an array in place. It modifies the original array and returns a reference to the same array.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="image-section">
+                  <img src="./assets/transformation.png" alt="Transformation Illustration" class="illustration">
+                </div>
+              </div>
+        </section>
+        <section class="bestPractises">
+            <div class="container">
+                <h1>Best Practices for Array Manipulation</h1>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-button">Immutability is Key</button>
+                        <div class="accordion-content">
+                            <p>When working with arrays, it's important to keep in mind the concept of immutability. Many array methods, such as <code>map()</code> and <code>filter()</code>, return new arrays instead of modifying the original. This helps prevent unintended side effects and makes your code more predictable and easier to reason about.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-button">Embrace Functional Programming</button>
+                        <div class="accordion-content">
+                            <p>Array methods like <code>forEach()</code>, <code>map()</code>, and <code>reduce()</code> are heavily influenced by the principles of functional programming. By using these methods, you can write more concise, expressive, and declarative code that is easier to understand and maintain.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-button">Choose the Right Method for the Job</button>
+                        <div class="accordion-content">
+                            <p>Each array method serves a specific purpose, so it's important to understand when to use each one. Take the time to familiarize yourself with the different methods and their use cases to ensure you're using the most appropriate tool for the task at hand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pitfalls">
+           <div class="pitfalls__bg">
+            <div class="container">
+                <h1>Common Pitfalls and How to Avoid Them</h1>
+                <div class="pitfalls-grid">
+                    <div class="pitfall-item">
+                        <div class="number">1</div>
+                        <h2>Mutation Mistakes</h2>
+                        <p>Be careful when using methods like <code>splice()</code> and <code>reverse()</code>, as they modify the original array. This can lead to unexpected behavior and bugs if you're not aware of the changes.</p>
+                    </div>
+                    <div class="pitfall-item">
+                        <div class="number">2</div>
+                        <h2>Off-by-One Errors</h2>
+                        <p>When working with array indices, it's easy to make off-by-one errors. Double-check your logic and use methods like <code>length</code> to ensure you're accessing the correct elements.</p>
+                    </div>
+                    <div class="pitfall-item">
+                        <div class="number">3</div>
+                        <h2>Unintended Type Coercion</h2>
+                        <p>Some array methods, like <code>sort()</code> and <code>concat()</code>, can perform unexpected type coercion. Make sure you understand how these methods handle different data types to avoid surprises.</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>\
+        <section class="examples">
+            <div class="container">
+                <h1>Real-World Examples and Use Cases</h1>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <h2>Data Transformation</h2>
+                            <p>Use <code>map()</code> to transform a list of user objects into an array of user names. Or use <code>filter()</code> and <code>reduce()</code> to calculate the total sales for a given product category.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <h2>User Interface Interactions</h2>
+                            <p>Utilize <code>push()</code> and <code>splice()</code> to add or remove items from a shopping cart. Leverage <code>indexOf()</code> and <code>includes()</code> to handle autocomplete suggestions or tag management.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">3</div>
+                        <div class="timeline-content">
+                            <h2>Algorithm Implementation</h2>
+                            <p>Implement sorting algorithms using <code>sort()</code> to organize data. Use <code>reduce()</code> to perform complex calculations or transformations, such as finding the most frequent element in an array.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="conclusion     conclusion-section">
+            <div class="conclusion__bg">
+               <div class="container">
+                   <h1>Conclusion and Additional Resources</h1>
+                   <p>
+                       Congratulations! You've reached the end of this comprehensive guide to array methods in JavaScript. By now, you should have a solid understanding of how to use these powerful tools to manipulate and work with data in your applications.
+                   </p>
+                   <p>
+                       Remember, mastering array methods takes time and practice. Keep exploring, experimenting, and referencing the resources below to deepen your knowledge and become a true array method expert!
+                   </p>
+                   <div class="buttons">
+                       <a href="#" class="button explore">Explore More</a>
+                       <a href="#" class="button get-started">Get Started</a>
+                   </div>
+                 </div>
+            </div>
+           </div>
+
+    </main>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>

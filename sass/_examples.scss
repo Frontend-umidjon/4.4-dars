@@ -1,0 +1,122 @@
+.examples{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #eaeaea;
+    .container{
+        padding: 60px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2.5rem;
+        color: #ffffff;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .timeline {
+        position: relative;
+        padding-left: 40px;
+        border-left: 2px solid #444;
+    }
+    
+    .timeline-item {
+        display: flex;
+        margin-bottom: 40px;
+        position: relative;
+        padding-bottom: 20px;
+        transition: transform 0.3s;
+    }
+    
+    .timeline-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .timeline-number {
+        width: 50px;
+        height: 50px;
+        background-color: #555;
+        color: #ffffff;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        left: -25px;
+        top: 0;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .timeline-content {
+        background-color: #222;
+        padding: 20px 25px;
+        border-radius: 8px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .timeline-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #fff;
+        transition: color 0.3s;
+    }
+    
+    .timeline-content p {
+        font-size: 1rem;
+        color: #ccc;
+        line-height: 1.6;
+    }
+    
+    .timeline-content code {
+        background-color: #333;
+        padding: 2px 6px;
+        border-radius: 4px;
+        color: #eaeaea;
+        font-size: 0.95rem;
+    }
+    
+    .timeline-item:hover .timeline-number {
+        background-color: #666;
+        transform: scale(1.1);
+    }
+    
+    .timeline-item:hover .timeline-content {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .timeline-item:hover .timeline-content h2 {
+        color: #aaa;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            padding: 15px;
+        }
+    
+        h1 {
+            font-size: 2rem;
+        }
+    
+        .timeline {
+            padding-left: 30px;
+        }
+    
+        .timeline-number {
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            left: -20px;
+        }
+    
+        .timeline-content {
+            padding: 15px 20px;
+        }
+    }
+}
